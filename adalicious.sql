@@ -1,3 +1,4 @@
+-- Table dishies
 DROP TABLE IF EXISTS dishies;
 create table dishies(
 id integer primary key generated always as identity,
@@ -14,3 +15,20 @@ price integer
 --       ('Front-end Salad', 'Une salade légère avec tomates, feta et vinaigrette maison.', '🥗', 10),
 --       ('Back-End Brownie', 'Un brownie moelleux au chocolat.', '🍫', 4 ),
 --       ('Full Stack Menu', 'plat, frites, dessert, boisson', '🥗', 19);
+
+
+-- Table clients
+DROP TABLE IF EXISTS clients;
+create table clients(
+id integer primary key generated always as identity,
+firstname text
+
+);
+
+-- INSERT INTO clients (firstname)
+-- VALUES ('Camille'),
+--        ('Petro'),
+--        ('Nael'),
+--        ('Amine'),
+--        ('Anyr'),
+--        ('Lili');

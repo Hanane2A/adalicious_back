@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -14,4 +13,9 @@ model dishies {
   description String? @db.VarChar
   image       String? @db.VarChar
   price       Int?
+}
+
+model clients {
+  id        Int     @id @default(autoincrement())
+  firstname String?
 }
